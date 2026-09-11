@@ -82,7 +82,7 @@ Add screenshots of the application here to showcase the user interface and major
 
 ## 👨‍💻 Developer
 
-**Vinod Gubyad**
+**Aishwarya Gubyad**
 
 Developed as a full-stack web development project to gain practical experience in Python, web technologies, SQL, and GitHub.
 
