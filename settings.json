@@ -1,0 +1,19 @@
+{
+  "permissions": {
+    "allow": [
+      "PowerShell(python -c \"import django; print\\(django.get_version\\(\\)\\)\" 2>&1)",
+      "PowerShell(python -c \"import razorpay; print\\(razorpay.__version__\\)\" 2>&1)",
+      "PowerShell(pip install -r \"d:\\\\Aishu\\\\FinalMealmate-main\\\\requirements.txt\")",
+      "PowerShell(python \"d:\\\\Aishu\\\\FinalMealmate-main\\\\manage.py\" migrate)",
+      "PowerShell(& \"C:\\\\Users\\\\inter\\\\AppData\\\\Local\\\\Programs\\\\Python\\\\Python314\\\\python.exe\" \"d:\\\\Aishu\\\\FinalMealmate-main\\\\manage.py\" migrate)",
+      "PowerShell(& \"C:\\\\Users\\\\inter\\\\AppData\\\\Local\\\\Programs\\\\Python\\\\Python314\\\\python.exe\" \"d:\\\\Aishu\\\\FinalMealmate-main\\\\manage.py\" runserver 127.0.0.1:8000)",
+      "PowerShell(Start-Sleep -Seconds 3; try { $r = Invoke-WebRequest -Uri \"http://127.0.0.1:8000/\" -UseBasicParsing -TimeoutSec 5; \"Status: $\\($r.StatusCode\\)\"; \"Length: $\\($r.Content.Length\\)\" } catch { \"Error: $\\($_.Exception.Message\\)\" })",
+      "PowerShell(& \"C:\\\\Users\\\\inter\\\\AppData\\\\Local\\\\Programs\\\\Python\\\\Python314\\\\python.exe\" \"d:\\\\Aishu\\\\FinalMealmate-main\\\\manage.py\" runserver 127.0.0.1:8000 --noreload)",
+      "PowerShell(Start-Sleep -Seconds 3; try { $r = Invoke-WebRequest -Uri \"http://127.0.0.1:8000/\" -UseBasicParsing -TimeoutSec 8; \"Status: $\\($r.StatusCode\\)\"; \"ContentLength: $\\($r.Content.Length\\)\" } catch { \"Error: $\\($_.Exception.Message\\)\" })",
+      "PowerShell(& \"C:\\\\Users\\\\inter\\\\AppData\\\\Local\\\\Programs\\\\Python\\\\Python314\\\\python.exe\" -m pip install python-pptx reportlab 2>&1)",
+      "PowerShell(& \"C:\\\\Users\\\\inter\\\\AppData\\\\Local\\\\Programs\\\\Python\\\\Python314\\\\python.exe\" \"d:\\\\Aishu\\\\FinalMealmate-main\\\\generate_report.py\")",
+      "PowerShell(Start-Sleep -Seconds 3; try { $r = Invoke-WebRequest -Uri \"http://127.0.0.1:8000/\" -UseBasicParsing -TimeoutSec 8; \"Status: $\\($r.StatusCode\\)\" } catch { \"Error: $\\($_.Exception.Message\\)\" })",
+      "PowerShell(& \"C:\\\\Users\\\\inter\\\\AppData\\\\Local\\\\Programs\\\\Python\\\\Python314\\\\python.exe\" \"d:\\\\Aishu\\\\FinalMealmate-main\\\\manage.py\" shell -c \"from delivery.models import Customer; [print\\(c.username, '|', c.password\\) for c in Customer.objects.all\\(\\)]\")"
+    ]
+  }
+}
